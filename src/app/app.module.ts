@@ -11,6 +11,7 @@ import { PostsComponent } from './components/posts/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsFormComponent } from './components/posts-form/posts-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     UsersComponent,
     NavbarComponent,
     PostsComponent,
-    PostsFormComponent
+    PostsFormComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
   providers: [UserService, PostService],
