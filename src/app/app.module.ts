@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostsFormComponent } from './components/posts-form/posts-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { PostComponent } from './components/post/post.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     PostsComponent,
     PostsFormComponent,
-    HomeComponent
+    HomeComponent,
+    PostComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
   providers: [UserService, PostService],
