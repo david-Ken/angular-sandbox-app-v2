@@ -10,6 +10,7 @@ import { PostService } from './services/post.service';
 import { PostsComponent } from './components/posts/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsFormComponent } from './components/posts-form/posts-form.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { PostsFormComponent } from './components/posts-form/posts-form.component
     PostsComponent,
     PostsFormComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
   providers: [UserService, PostService],
   bootstrap: [AppComponent]
 })
