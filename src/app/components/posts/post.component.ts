@@ -16,4 +16,8 @@ export class PostsComponent implements OnInit {
       .getPosts()
       .subscribe(posts => console.log((this.posts = posts)));
   }
+
+  onNewPost(post: Post) {
+    this.posts.unshift(post);
+  }
 }
