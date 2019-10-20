@@ -9,13 +9,15 @@ import { UserService } from './services/user.service';
 import { PostService } from './services/post.service';
 import { PostsComponent } from './components/posts/post.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostsFormComponent } from './components/posts-form/posts-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     UsersComponent,
     NavbarComponent,
-    PostsComponent
+    PostsComponent,
+    PostsFormComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [UserService, PostService],
